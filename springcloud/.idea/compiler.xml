@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="microservicecloudeureka7001" />
         <module name="microservicecloudproviderdept8001" />
         <module name="microservicecloudconsumerdept80" />
         <module name="microservicecloudapi" />
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="microservicecloudapi" options="-parameters" />
       <module name="microservicecloudconsumerdept80" options="-parameters" />
+      <module name="microservicecloudeureka7001" options="-parameters" />
       <module name="microservicecloudproviderdept8001" options="-parameters" />
     </option>
   </component>
