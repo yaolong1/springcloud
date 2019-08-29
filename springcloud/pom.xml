@@ -12,6 +12,11 @@
         <module>microservicecloud-provider-dept-8001</module>
         <module>microservicecloud-consumer-dept-80</module>
         <module>microservicecloud-eureka-7001</module>
+        <module>microservicecloud-eureka-7002-</module>
+        <module>microservicecloud-eureka-7003-</module>
+        <module>microservicecloud-provider-dept-8002-</module>
+        <module>microservicecloud-provider-dept-8003-</module>
+        <module>microservicecloud-consumer-dept-feign</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -95,6 +100,48 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+            <version>2.1.2.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+            <version>2.1.2.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>2.0.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.microservicecloud-api</groupId>
+            <artifactId>microservicecloud-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
 
     <repositories>
@@ -134,5 +181,24 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
+    <build>
+           <finalName>microservicecloud</finalName>
+           <resources>
+             <resource>
+               <directory>src/main/resources</directory>
+               <filtering>true</filtering>
+             </resource>
+           </resources>
+           <plugins>
+             <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-resources-plugin</artifactId>
+               <configuration>
+                 <delimiters>
+                  <delimiter>$</delimiter>
+                 </delimiters>
+               </configuration>
+             </plugin>
+           </plugins>
+          </build>
 </project>

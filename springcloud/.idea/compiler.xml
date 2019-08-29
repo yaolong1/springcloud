@@ -6,19 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="microservicecloudeureka7001" />
+        <module name="microservicecloudproviderdept8002" />
         <module name="microservicecloudproviderdept8001" />
-        <module name="microservicecloudconsumerdept80" />
+        <module name="microservicecloudeureka7003" />
+        <module name="microservicecloudeureka7002" />
+        <module name="microservicecloudeureka7001" />
+        <module name="microservicecloudproviderdept8003" />
         <module name="microservicecloudapi" />
+        <module name="microservicecloudconsumerdeptfeign" />
+        <module name="microservicecloudconsumerdept80" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_7002" target="1.8" />
+      <module name="_7003" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="_7002" options="-parameters" />
+      <module name="_7003" options="-parameters" />
       <module name="microservicecloudapi" options="-parameters" />
       <module name="microservicecloudconsumerdept80" options="-parameters" />
+      <module name="microservicecloudconsumerdeptfeign" options="-parameters" />
       <module name="microservicecloudeureka7001" options="-parameters" />
+      <module name="microservicecloudeureka7002" options="-parameters" />
+      <module name="microservicecloudeureka7003" options="-parameters" />
       <module name="microservicecloudproviderdept8001" options="-parameters" />
+      <module name="microservicecloudproviderdept8002" options="-parameters" />
+      <module name="microservicecloudproviderdept8003" options="-parameters" />
     </option>
   </component>
 </project>
