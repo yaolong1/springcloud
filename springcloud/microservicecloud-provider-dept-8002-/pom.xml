@@ -11,6 +11,7 @@
 
     <artifactId>microservicecloud-provider-dept-8002-</artifactId>
     <dependencies>
+        <!--   添加监控支持     -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>

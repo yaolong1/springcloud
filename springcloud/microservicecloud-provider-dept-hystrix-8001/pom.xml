@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-provider-dept-8001</artifactId>
-
+    <artifactId>microservicecloud-provider-dept-hystrix-8001</artifactId>
     <dependencies>
         <!--   添加监控支持     -->
         <dependency>
@@ -78,6 +77,12 @@
             <artifactId>microservicecloud-api</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <!-- hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+
         </dependency>
     </dependencies>
 

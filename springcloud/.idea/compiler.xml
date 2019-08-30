@@ -8,9 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="microservicecloudproviderdept8002" />
         <module name="microservicecloudproviderdept8001" />
+        <module name="microservicecloudproviderdepthystrix8001" />
+        <module name="microservicecloudconsumerhystrixdashboard" />
         <module name="microservicecloudeureka7003" />
         <module name="microservicecloudeureka7002" />
         <module name="microservicecloudeureka7001" />
+        <module name="microservicecloudzuulgateway9527" />
         <module name="microservicecloudproviderdept8003" />
         <module name="microservicecloudapi" />
         <module name="microservicecloudconsumerdeptfeign" />
@@ -29,12 +32,15 @@
       <module name="microservicecloudapi" options="-parameters" />
       <module name="microservicecloudconsumerdept80" options="-parameters" />
       <module name="microservicecloudconsumerdeptfeign" options="-parameters" />
+      <module name="microservicecloudconsumerhystrixdashboard" options="-parameters" />
       <module name="microservicecloudeureka7001" options="-parameters" />
       <module name="microservicecloudeureka7002" options="-parameters" />
       <module name="microservicecloudeureka7003" options="-parameters" />
       <module name="microservicecloudproviderdept8001" options="-parameters" />
       <module name="microservicecloudproviderdept8002" options="-parameters" />
       <module name="microservicecloudproviderdept8003" options="-parameters" />
+      <module name="microservicecloudproviderdepthystrix8001" options="-parameters" />
+      <module name="microservicecloudzuulgateway9527" options="-parameters" />
     </option>
   </component>
 </project>
