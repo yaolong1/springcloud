@@ -23,7 +23,7 @@ zuul:
   routes:
     mydept.serviceId: microservicecloud-dept
     mydept.path: /mydept/**
-#  ignored-services: microservicecloud-dept #针对于单个微服务
+  #  ignored-services: microservicecloud-dept #针对于单个微服务
   ignored-services: "*"
   prefix: /yaolong
 
