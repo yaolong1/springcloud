@@ -4,6 +4,7 @@ import com.yaolong.order_system.entities.Menu;
 import feign.hystrix.FallbackFactory;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author yaoLong
@@ -14,7 +15,7 @@ public class FeginServiceConsumerFallbackFactory implements FallbackFactory<Fegi
     public FeginServiceConsumer create(Throwable cause) {
         return new FeginServiceConsumer() {
             @Override
-            public List<Menu> findAll(int index, int limit) {
+            public Map<String,Object> findAll(int index, int limit) {
                 return null;
             }
 

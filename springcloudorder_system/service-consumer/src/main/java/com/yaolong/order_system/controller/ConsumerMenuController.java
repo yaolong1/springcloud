@@ -23,12 +23,7 @@ public class ConsumerMenuController {
     @GetMapping("/menu/findAll")
     public Map<String,Object> findAll(@RequestParam("page") int page, @RequestParam("limit") int limit) {
         int index = (page-1)* limit;
-        Map<String,Object> datas = new HashMap<>();
-        datas.put("code",0);
-        datas.put("msg","");
-        datas.put("count",100);
-        datas.put("data",serviceConsumer.findAll(index, limit));
-        return datas;
+        return serviceConsumer.findAll(index,limit);
     }
 //    @GetMapping("/menu/findAll")
 //    public List<Menu> findAll() {

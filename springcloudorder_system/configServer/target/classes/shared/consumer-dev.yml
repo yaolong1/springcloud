@@ -1,0 +1,26 @@
+server:
+  port: 81
+spring:
+  application:
+    name: consumer                                                                                                   # 等待连接获取的最大超时时间
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .htm
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+  instance:
+    instance-id: service-consumer:81
+    prefer-ip-address: true
+info:
+  app.name:  yaolong-microservicecloud
+  company.name:  www.yaolong.top
+  build.artifactId:  ${project.artifactId}$
+  build.version:  ${project.version}$

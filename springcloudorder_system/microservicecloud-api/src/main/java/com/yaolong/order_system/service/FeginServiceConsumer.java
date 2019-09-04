@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author yaoLong
@@ -16,7 +17,7 @@ import java.util.List;
 @FeignClient(value = "ZUUL-GATEWAY"/*,fallbackFactory = FeginServiceConsumerFallbackFactory.class*/)
 public interface FeginServiceConsumer {
     @GetMapping("/yaolong/menuprovider/menu/findAll/{index}/{limit}")
-    public List<Menu> findAll(@PathVariable("index") int index, @PathVariable("limit") int limit);
+    public Map<String,Object> findAll(@PathVariable("index") int index, @PathVariable("limit") int limit);
 //@GetMapping("/yaolong/menuprovider/menu/findAll")
 //public List<Menu> findAll();
 

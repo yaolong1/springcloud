@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka7001" />
+        <module name="zuulgeteway" />
+        <module name="orderprovider" />
+        <module name="configServer" />
+        <module name="serviceconsumer" />
+        <module name="menuprovider" />
+        <module name="microservicecloud-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservicecloud-eureka-7001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configServer" options="-parameters" />
+      <module name="eureka7001" options="-parameters" />
+      <module name="menuprovider" options="-parameters" />
+      <module name="microservicecloud-api" options="-parameters" />
+      <module name="microservicecloud-eureka-7001" options="-parameters" />
+      <module name="orderprovider" options="-parameters" />
+      <module name="serviceconsumer" options="-parameters" />
+      <module name="springcloudorder_system" options="-parameters" />
+      <module name="zuulgeteway" options="-parameters" />
+    </option>
+  </component>
+</project>
