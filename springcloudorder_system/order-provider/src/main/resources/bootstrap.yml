@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: order
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://config-8762.com:8762
+      fail-fast: true
