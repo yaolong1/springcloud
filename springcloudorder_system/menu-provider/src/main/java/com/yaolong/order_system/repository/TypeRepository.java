@@ -12,6 +12,9 @@ import java.util.List;
 @Repository
 public interface TypeRepository {
 
-    public Type findById(Long id);
+    public Type findById(long id);
+
+    public List<Type> findAll();
+
 
 }
